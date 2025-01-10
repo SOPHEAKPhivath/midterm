@@ -20,6 +20,7 @@ Checkin_service = st.number_input(label="Checkin service (rate: 1-5)", value=1, 
 Cleanliness = st.number_input(label="Cleanliness (rate: 1-5)", value=1, min_value=1, max_value=5, step=1)
 Online_boarding = st.number_input(label="Online boarding (rate: 1-5)", value=1, min_value=1, max_value=5, step=1)
 
+st.title("✈️ Customer satisfaction prediction ")
 # 3. Combine input into an array of X
 X_num = np.array(
     [
