@@ -72,7 +72,7 @@ X = scale.fit_transform(X=X_num)
 prediction = lg_model.predict(X)
 prediction_decoded = encode.inverse_transform(prediction)
 # st.write("Prediction:", prediction)
-# st.write("Decoded Prediction:", prediction_decoded)
+st.write("Decoded Prediction:", prediction_decoded)
 
 
 
