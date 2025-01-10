@@ -45,7 +45,7 @@ X_num = np.array(
     ],
     dtype=np.int32,
 )
-st.write("Raw Input Data:", X_num)
+# st.write("Raw Input Data:", X_num)
 
 # 4. import model
 
@@ -66,13 +66,13 @@ with open(file="lg.pkl", mode="rb") as lg_file:
 # st.write(X_num)
 
 X = scale.fit_transform(X=X_num)
-st.write("Scaled Data:", X)
+# st.write("Scaled Data:", X)
 
 
 prediction = lg_model.predict(X)
 prediction_decoded = encode.inverse_transform(prediction)
-st.write("Prediction:", prediction)
-st.write("Decoded Prediction:", prediction_decoded)
+# st.write("Prediction:", prediction)
+# st.write("Decoded Prediction:", prediction_decoded)
 
 
 
